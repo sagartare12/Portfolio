@@ -6,12 +6,15 @@ import Projects from './components/Projects'
 import About from './components/About'
 import Contact from './components/Contact'
 import Archive from './components/Archive'
+import Icons from './components/Icons'
+import {ContextProvider} from './Context'
 import { Route , Switch , Router} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
+      <ContextProvider>
       <Navbar />
-    
+    <Icons />
         <Switch>
           <Route exact path="/">
               <Home />
@@ -32,7 +35,7 @@ function App() {
             Page not found
           </Route>
         </Switch>
-     
+     </ContextProvider>
     </div>
   );
 }

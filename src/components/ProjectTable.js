@@ -1,56 +1,27 @@
 import React from 'react'
+import styled from 'styled-components'
+import { FaExternalLinkAlt,FaGithub} from "react-icons/fa";
+import {useData} from '../Context'
 
 
 
 const ProjectTable = () => {
-    const tableStructure = [
-     
-             'Year',
-             'Name',
-             'Built With',
-            'Links'
-        
-      
-    ]
-    const rows = [{
-        call1: '2014',
-        cell2: 'app1',
-        cell3: 'css',
-        link1:'sa',
-        link:'da'
-    },
-{
-        call1: '2014',
-        cell2: 'app1',
-        cell3: 'css',
-        link1:'sa',
-        link:'da'
-    },
-{
-        call1: '2014',
-        cell2: 'app1',
-        cell3: 'css',
-        link1:'sa',
-        link:'da'
-    }]
+    const {data} = useData();
+   
     return (
-        <div>
-            <table style={{marginLeft:'auto',marginRight:'auto'}}>
+        <Table>
+            <table >
                
-  <tr>
-    <th>Year</th>
-    <th>Name</th>
-    <th>Built With</th>
-    <th>Links</th>
-  </tr>
+
   {
-      rows.map((item)=>(
-  <tr>
+      data.map((item)=>(
+  <tr className="rows">
     
-    <td>{item.call1}</td>
-    <td>{item.cell2}</td>
-    <td>{item.cell3}</td>
-    <td>{item.link1}</td>
+    <td>2021</td>
+    <td>{item.name}</td>
+    <td className="built_with">{item.built_with}</td>
+    <Icons> <a className = "Link" href={item.gitHub_link}><FaGithub  className="margin" /></a>
+                    <a className = "Link" href={item.website_link}><FaExternalLinkAlt  className="margin" /></a></Icons>
     
   </tr>
   ))
@@ -58,8 +29,61 @@ const ProjectTable = () => {
 
 </table>
                
-        </div>
+        </Table>
     )
 }
 
 export default ProjectTable
+
+const Table =  styled.div`
+margin-top:5%;
+    table{
+        margin: 0 auto 0 auto;
+        width: 80%;
+        text-align:left;
+
+        
+        .heading{
+            font-size:85%;
+            font-weight:400;
+            margin-bottom:10%;
+        }
+        .rows{
+            font-size:85%;
+            
+                margin: 5% 0;
+
+                .built_with{
+                    color: rgb(22,61,104);
+                    font-weight: 600;
+
+
+
+
+                }
+                
+            
+
+           
+            &:hover{
+                background: rgb(240,240,240);
+            }
+        }
+    }
+`;
+
+
+
+const Icons = styled.td`
+    a:first-child{
+        margin-left: 0;
+    }
+    a{
+        margin: 0 12%;
+        color: black;
+        &:hover{
+            background:black;
+            color: white;
+        }
+    }
+`;

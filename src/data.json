@@ -1,0 +1,50 @@
+ [
+    {
+        "id": 1,
+        "name":"Box-Office App",
+        "demo_pic" : "images/box.JPG",
+        "details": "Built a SPA web app to allow user to check the information of movie actors and movies done by the actor as well as  visualize the profile of particular actor. This website built by me in React internshala training where I developed and tested the front end using React.",
+        "built_with" : "React.js  , html , SASS .",
+        "gitHub_link" : "https://github.com/sagartare12/box-office.git",
+        "website_link":"https://sagartare12.github.io/box-office/",
+        "type" : "main_project"
+    },
+     {
+        "id": 2,
+        "name":"Instagram clone",
+        "demo_pic" : "images/insta+.JPG",
+        "details": "This instagram clone built with React in that I used firebase for data storage , user authentication and deployment online .I try to built all the functionality those are necessory.In this clone user can upload images and comment to any post. SCSS used for styling the app.",
+        "built_with" : "React.js  ,firebase ,  html , SASS .",
+        "gitHub_link" : "https://github.com/sagartare12/Social-media-app.git",
+        "website_link":"https://instagram-clone-fa83c.web.app/",
+        "type" : "main_project"
+    },
+     {
+        "id": 3,
+        "name":"Disney+ clone",
+         "demo_pic" : "images/disney.jpg",
+        "details": "This is a simple React.js web app that helps user to check the movies details. In this project I use the firebase to collect the data which used in the project , redux use for the state management.",
+        "built_with" : "React.js , Redux , Firebase , Styled-Components , html .",
+        "gitHub_link" : "https://github.com/sagartare12/Disney-clone.git",
+        "website_link":"https://keen-wescoff-6dc372.netlify.app/",
+        "type" : "main_project"
+    },
+     {
+        "id": 4,
+        "name":"E-commerce app",
+        "details": " This is a simple web app in which user can check the details of product and user add or remove  any products in cart.Context api use for the state management. ",
+        "built_with" : " React.js , Bootstrap , SASS , Html  .",
+        "gitHub_link" : "https://github.com/sagartare12/E-commerce-.git",
+        "website_link":"",
+        "type" : "project"
+    },
+     {
+        "id": 5,
+        "name":"Tic Tac Toe game",
+        "details": "This game built with React .I built this game during the my react training it helps me to lern the basics concepts of react like a simple state management with React hook.",
+        "built_with" : "React.js  , html , SASS .",
+        "gitHub_link" : "https://github.com/sagartare12/my-ap.git",
+        "website_link":"https://relaxed-perlman-9da39d.netlify.app/",
+        "type" : "project"
+    }
+]

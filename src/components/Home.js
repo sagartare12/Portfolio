@@ -3,11 +3,12 @@ import styled from 'styled-components'
 import About from './About'
 import Projects from './Projects'
 import Icons from './Icons'
+import Contact from './Contact'
 const Home = () => {
     return (
-        <div style={{marginLeft:'5%', marginRight: '5%'}}>
-        <Main>
+        <div style={{marginLeft:'5%', marginRight: '5%',marginBottom:'5%'}}>
           
+        <Main>
             <h3>Hello, I'm</h3>
             <h1>Sagar Tare</h1>
             <h2>I build things for the web.</h2>
@@ -20,9 +21,10 @@ const Home = () => {
             
           
         </Main>
-        <Icons />
         <About />
         <Projects />
+        <Contact />
+      
         </div>
     )
 }
@@ -32,7 +34,7 @@ export default Home
 const  Main = styled.div`
    
  
-        margin:10% 0 5% 30%;
+        margin:10% 0 20% 30%;
         
         text-align: left;
         .button{
@@ -44,6 +46,7 @@ const  Main = styled.div`
             &:hover{
                 background:black;
                 color: white;
+                border:2px solid rgb(143,143,143);
             }
         }
          

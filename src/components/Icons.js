@@ -9,14 +9,11 @@ const Icons = () => {
     return (
         <Main>
         
-        <Icon>
-            
-            
-            
-            <a className = "Link" href="https://github.com/sagartare12?tab=repositories"><FaGithub  className="margin" /></a>
-            <a href="https://www.linkedin.com/in/sagar-tare-173301214/"><FaLinkedinIn className="margin" /></a>
-            <a href="https://www.instagram.com/sagartare2014/"><FaInstagram className="margin" /></a>
-        </Icon>
+        <div className="icons">
+        <a  href="https://github.com/sagartare12?tab=repositories"><FaGithub  className="margin" /></a><br />
+        <a href="https://www.linkedin.com/in/sagar-tare-173301214/"><FaLinkedinIn className="margin" /></a><br />
+        <a href="https://www.instagram.com/sagartare2014/"><FaInstagram className="margin" /></a>
+        </div>
         <div className="vLine"></div>
         </Main>
     )
@@ -26,35 +23,45 @@ export default Icons
 
 
 const Main = styled.div`
-    display : flex;
+
+position: fixed;
+bottom:6px;
+margin-left:25px;
+
+    .icons{
+        text-align:left;
+    }
+
+    a{
+        
+        display-content:center;
+        margin:10px 0 10px 10px;
+        font-size:22px;
+        color:black;
+        
+        &:hover{
+            background:black;
+            color:white;
+           
+            padding:2px;
+         
+        }
+    }
+        
+    
+
      .vLine {
-      border: 1px solid black;
-      height: 120px;
-      margin: 0 0 10% 10px;
+         
+     border-left: 3px solid black;
+  height: 90px;
+  margin:5px 0 0 19px;
    }
 `;
-const Icon = styled.div`
 
-    display : flex;
-    flex-direction : column;
-    font-size: 22px;
-   
-a{
-   
-    color:black;
-   
-}
-  
-    .margin{
-    margin-top: 12px;
-    background-color: white;
-    &:hover{
-        padding:2px;
-        background:black;
-        color:white;
-    }
-    }
-`;
 
 
 {/* <a href="https://github.com/sagartare12?tab=repositories"></a> */}
+
+
+
+

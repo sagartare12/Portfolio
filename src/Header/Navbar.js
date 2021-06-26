@@ -5,8 +5,8 @@ function Navbar() {
 
     const LINKS = [
         {to:'/' , name:'HOME'},
-        {to:'/projects' , name:'WORKS'},
         {to:'/about' , name:'ABOUT'},
+        {to:'/projects' , name:'WORKS'},
         {to:'/contact', name:'CONTACT'}
     ]
     return (
