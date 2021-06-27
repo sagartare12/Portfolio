@@ -16,7 +16,7 @@ const Home = () => {
                 build things for web applications <br />
                 and websites .
             </h6>
-            <span className="button">SEE MY RESUME</span>
+            <span className="button"><a href="https://drive.google.com/file/d/1fnKnCTDsEBTcZaL66S5LDru0T6y54x4O/view?usp=sharing" alt="">SEE MY RESUME</a></span>
             
             
           
@@ -42,11 +42,18 @@ const  Main = styled.div`
             border: 1px solid black;
             padding: 10px 12px;
             border-radius: 5%;
+            a{
+                text-decoration:none;
+                color:black;
+            }
             
             &:hover{
                 background:black;
                 color: white;
                 border:2px solid rgb(143,143,143);
+                a{
+                    color:white;
+                }
             }
         }
          
