@@ -16,7 +16,7 @@ const Home = () => {
                 build things for web applications <br />
                 and websites .
             </h6>
-            <span className="button"><a href="https://drive.google.com/file/d/1fnKnCTDsEBTcZaL66S5LDru0T6y54x4O/view?usp=sharing" alt="">SEE MY RESUME</a></span>
+            <span className="button"><a href="https://drive.google.com/file/d/15jSoN4LZgd_KHvqHARpZ1WlAb3sAzw-v/view?usp=sharing" alt="">SEE MY RESUME</a></span>
             
             
           
